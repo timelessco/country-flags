@@ -3,5 +3,9 @@ import { findFlagUrlByNationality } from "country-flags-svg";
 
 export default function handler(req, res) {
   const { nationality } = req.body;
-  res.status(200).json({ image_url: findFlagUrlByNationality(nationality) });
+  if (nationality) {
+    res.status(200).json({ image_url: findFlagUrlByNationality(nationality) });
+  } else {
+    res.status(200).json({ error: "Nationality missing in request body" });
+  }
 }
