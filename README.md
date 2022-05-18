@@ -1,6 +1,24 @@
 ## Welcome to Country Flags Serverless Functions!
 
-## APIs Available
+## Deployed URLs
+
+1. ***By Nationality***- https://country-flags-topaz.vercel.app/api/getCountryByNationality
+![image](https://user-images.githubusercontent.com/35562287/169065800-8e753326-9bfa-45f7-b980-efb8d4e901af.png)
+
+2. ***By Name***- https://country-flags-topaz.vercel.app/api/getFlagUrlByCountryName
+![image](https://user-images.githubusercontent.com/35562287/169065834-ffddf645-5d1e-44f7-873c-5cbc4ea96f90.png)
+
+3. ***By ISO2 Code***- https://country-flags-topaz.vercel.app/api/getFlagUrlByISO2Code
+![image](https://user-images.githubusercontent.com/35562287/169065896-76f1ed85-0476-425f-af57-2411e1aced5c.png)
+
+4. ***By ISO3 Code***- https://country-flags-topaz.vercel.app/api/getFlagUrlByISO3Code
+![image](https://user-images.githubusercontent.com/35562287/169065926-6321c266-ee7d-46df-a502-4546eda081cd.png)
+
+5. ***All Countries***- https://country-flags-topaz.vercel.app/api/getAllCountries
+![image](https://user-images.githubusercontent.com/35562287/169065953-f4f60c25-78d6-4ac8-b4d3-80085e7660d7.png)
+
+
+## APIs Available When Trying Locally
 
 1. `api/getAllCountries`
 
