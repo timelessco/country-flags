@@ -3,12 +3,16 @@ import { findFlagUrlByNationality } from "country-flags-svg";
 import got from "got";
 
 export default async function handler(req, res) {
-  const { nationality, width = 250, height = 250 } = req.query;
+  const { nationality } = req.query;
   const image_url = findFlagUrlByNationality(nationality);
-  const imageRequest = got(image_url);
-  const [imageResponse, imageBuffer] = await Promise.all([imageRequest, imageRequest.buffer()]);
+  try {
+    const imageRequest = got(image_url);
+    const [imageResponse, imageBuffer] = await Promise.all([imageRequest, imageRequest.buffer()]);
 
-  res.setHeader("Cache-Control", "s-maxage=43200");
-  res.setHeader("content-type", imageResponse.headers["content-type"]);
-  res.send(imageBuffer);
+    res.setHeader("Cache-Control", "s-maxage=43200");
+    res.setHeader("content-type", imageResponse.headers["content-type"]);
+    res.send(imageBuffer);
+  } catch (e) {
+    res.send(e.message + ", Check if you are sending in the correct nationality");
+  }
 }
