@@ -1,0 +1,6 @@
+# pnpm project settings. pnpm 11+ reads settings from this file, not from .npmrc.
+
+allowBuilds:
+  core-js-pure: true
+  sharp: true
+  unrs-resolver: true
