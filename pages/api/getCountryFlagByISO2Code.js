@@ -4,6 +4,10 @@ import got from "got";
 
 export default async function handler(req, res) {
   const { iso2code } = req.query;
+  if (typeof iso2code !== "string" || iso2code.trim() === "") {
+    res.status(400).json({ error: "ISO2Code missing in request query" });
+    return;
+  }
   const image_url = findFlagUrlByIso2Code(iso2code);
   try {
     const imageRequest = got(image_url);
