@@ -11,7 +11,6 @@ export default defineConfig({
     patchCssModules({ exportMode: "default" }),
     vinext({
       cache: { cdn: staticAssetsAdapter() },
-      prerender: { routes: "*" },
     }),
     cloudflare(),
   ],
