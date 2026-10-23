@@ -3,7 +3,7 @@ import ts from "eslint-config-next/typescript";
 
 const config = [
   {
-    ignores: [".next/**", ".turbo/**", "node_modules/**", "next-env.d.ts"],
+    ignores: [".next/**", ".turbo/**", "node_modules/**", "next-env.d.ts", "dist/**", ".vinext/**", ".cloudflare/**"],
   },
   ...coreWebVitals,
   ...ts,
