@@ -4,6 +4,10 @@ import got from "got";
 
 export default async function handler(req, res) {
   const { nationality } = req.query;
+  if (typeof nationality !== "string" || nationality.trim() === "") {
+    res.status(400).json({ error: "Nationality missing in request query" });
+    return;
+  }
   const image_url = findFlagUrlByNationality(nationality);
   try {
     const imageRequest = got(image_url);
