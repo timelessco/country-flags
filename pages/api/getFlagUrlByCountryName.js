@@ -2,7 +2,7 @@
 import { findFlagUrlByCountryName } from "country-flags-svg";
 
 export default function handler(req, res) {
-  const { countryName } = req.body;
+  const { countryName } = req.body ?? {};
   if (countryName) {
     res.status(200).json({ image_url: findFlagUrlByCountryName(countryName) });
   } else {
