@@ -1,88 +1,94 @@
 ## Welcome to Country Flags Serverless Functions!
 
+## Live deployment
+
+[Open on Cloudflare Workers](https://country-flags.timeless.workers.dev)
+
+Cloudflare Workers is the deployment target for this repository.
+
 ## Deployed GET URLs
 
 1. **By Country Name**
 
 #### Link :
 
-https://country-flags-topaz.vercel.app/api/getCountryFlagByCountryName?countryName=Portugal
+https://country-flags.timeless.workers.dev/api/getCountryFlagByCountryName?countryName=Portugal
 
 #### Usage :
 
 ```
-<img src="https://country-flags-topaz.vercel.app/api/getCountryFlagByCountryName?countryName=Portugal" height="150">
+<img src="https://country-flags.timeless.workers.dev/api/getCountryFlagByCountryName?countryName=Portugal" height="150">
 ```
 
 #### Response :
 
-<img src="https://country-flags-topaz.vercel.app/api/getCountryFlagByCountryName?countryName=Portugal" height="150">
+<img src="https://country-flags.timeless.workers.dev/api/getCountryFlagByCountryName?countryName=Portugal" height="150">
 
 2. **By ISO2Code**
 
 #### Link :
 
-https://country-flags-topaz.vercel.app/api/getCountryFlagByISO2Code?iso2code=AU
+https://country-flags.timeless.workers.dev/api/getCountryFlagByISO2Code?iso2code=AU
 
 #### Usage :
 
 ```
-<img src="https://country-flags-topaz.vercel.app/api/getCountryFlagByISO2Code?iso2code=AU" height="150">
+<img src="https://country-flags.timeless.workers.dev/api/getCountryFlagByISO2Code?iso2code=AU" height="150">
 ```
 
 #### Response :
 
-<img src="https://country-flags-topaz.vercel.app/api/getCountryFlagByISO2Code?iso2code=AU" height="150">
+<img src="https://country-flags.timeless.workers.dev/api/getCountryFlagByISO2Code?iso2code=AU" height="150">
 
 3. **By ISO3Code**
 
 #### Link :
 
-https://country-flags-topaz.vercel.app/api/getCountryFlagByISO3Code?iso3code=DEU
+https://country-flags.timeless.workers.dev/api/getCountryFlagByISO3Code?iso3code=DEU
 
 #### Usage :
 
 ```
-<img src="https://country-flags-topaz.vercel.app/api/getCountryFlagByISO3Code?iso3code=DEU" height="150">
+<img src="https://country-flags.timeless.workers.dev/api/getCountryFlagByISO3Code?iso3code=DEU" height="150">
 ```
 
 #### Response :
 
-<img src="https://country-flags-topaz.vercel.app/api/getCountryFlagByISO3Code?iso3code=DEU" height="150">
+<img src="https://country-flags.timeless.workers.dev/api/getCountryFlagByISO3Code?iso3code=DEU" height="150">
 
 3. **By Nationality**
 
 #### Link :
 
-https://country-flags-topaz.vercel.app/api/getCountryFlagByNationality?nationality=Indian
+https://country-flags.timeless.workers.dev/api/getCountryFlagByNationality?nationality=Indian
 
 #### Usage :
 
 ```
-<img src="https://country-flags-topaz.vercel.app/api/getCountryFlagByNationality?nationality=Indian" height="150">
+<img src="https://country-flags.timeless.workers.dev/api/getCountryFlagByNationality?nationality=Indian" height="150">
 ```
 
 #### Response :
 
-<img src="https://country-flags-topaz.vercel.app/api/getCountryFlagByNationality?nationality=Indian" height="150">
+<img src="https://country-flags.timeless.workers.dev/api/getCountryFlagByNationality?nationality=Indian" height="150">
 
 ## Deployed POST URLs
 
 ### Usage
 
-1. **_By Nationality_**- https://country-flags-topaz.vercel.app/api/getCountryByNationality
+1. **_By Nationality_**- https://country-flags.timeless.workers.dev/api/getCountryByNationality
    ![image](https://user-images.githubusercontent.com/35562287/169065800-8e753326-9bfa-45f7-b980-efb8d4e901af.png)
 
-2. **_By Name_**- https://country-flags-topaz.vercel.app/api/getFlagUrlByCountryName
+2. **_By Name_**- https://country-flags.timeless.workers.dev/api/getFlagUrlByCountryName
    ![image](https://user-images.githubusercontent.com/35562287/169065834-ffddf645-5d1e-44f7-873c-5cbc4ea96f90.png)
 
-3. **_By ISO2 Code_**- https://country-flags-topaz.vercel.app/api/getFlagUrlByISO2Code
+3. **_By ISO2 Code_**- https://country-flags.timeless.workers.dev/api/getFlagUrlByISO2Code
    ![image](https://user-images.githubusercontent.com/35562287/169065896-76f1ed85-0476-425f-af57-2411e1aced5c.png)
 
-4. **_By ISO3 Code_**- https://country-flags-topaz.vercel.app/api/getFlagUrlByISO3Code
+4. **_By ISO3 Code_**- https://country-flags.timeless.workers.dev/api/getFlagUrlByISO3Code
    ![image](https://user-images.githubusercontent.com/35562287/169065926-6321c266-ee7d-46df-a502-4546eda081cd.png)
 
-5. **_All Countries_**- https://country-flags-topaz.vercel.app/api/getAllCountries
+5. **_All Countries_**- https://country-flags.timeless.workers.dev/api/getAllCountries
    ![image](https://user-images.githubusercontent.com/35562287/169065953-f4f60c25-78d6-4ac8-b4d3-80085e7660d7.png)
 
 ## APIs Available When Trying Locally
