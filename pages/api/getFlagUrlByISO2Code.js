@@ -2,7 +2,7 @@
 import { findFlagUrlByIso2Code } from "country-flags-svg";
 
 export default function handler(req, res) {
-  const { iso2Code } = req.body;
+  const { iso2Code } = req.body ?? {};
   if (iso2Code) {
     res.status(200).json({ image_url: findFlagUrlByIso2Code(iso2Code) });
   } else {
