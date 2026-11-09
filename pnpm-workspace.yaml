@@ -1,6 +1,9 @@
 # pnpm project settings. pnpm 11+ reads settings from this file, not from .npmrc.
 
 allowBuilds:
+  # vinext's Cloudflare adapter runs the app on workerd; pnpm 12 blocks its
+  # postinstall by default.
+  workerd: true
   core-js-pure: true
   sharp: true
   unrs-resolver: true
